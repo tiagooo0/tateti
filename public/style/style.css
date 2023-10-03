@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body{
+ 
+    background-color:rgb(44, 55, 80);
+}
+.containerTateti {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-77%, -50%);
+}
+.titleNavbar{
+    font-family: 'Indie Flower', cursive;
+    margin-right: 20px;
+}
+.footerElem span{
+margin-right: 5px
+}
+
+.Father  .containerTateti .tateti img{
+    height: 100px;
+    width: 100px;
+    visibility: hidden;
+}
+.containerPlayer{ 
+    margin-top: 15px;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 10%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px; 
+    align-items: center; 
+}
+.tateti {
+    display: grid;
+    grid-template-columns: repeat(3, 50%); 
+    grid-gap: 5px; 
+    width: 400px; 
+}
+
+.tateti  button {
+    animation: shadow-animation 2s infinite;
+    width: 200px; 
+    height: 200px; 
+    text-align: center;
+    font-size: 36px; 
+    border: 2px solid #333; 
+    cursor: pointer; 
+}
+
+@keyframes shadow-animation {
+    0% {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    25%{
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    }
+    50% {
+        box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+    }
+    75%{
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+} 
+.icons span{
+    margin-right: 20px;
+    color: white;
+}
